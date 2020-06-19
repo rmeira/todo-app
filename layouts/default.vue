@@ -1,8 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar fixed color="orange" dark>
-      <v-toolbar-title v-if="!profile.name">Todo.app</v-toolbar-title>
-      <v-toolbar-title v-else>Tarefas: {{ profile.name }}</v-toolbar-title>
+    <v-app-bar color="orange" dark app>
+      <v-toolbar-title>Tarefas: {{ profile.name }}</v-toolbar-title>
       <v-spacer></v-spacer>
       <AvatarProfile :user="profile" />
     </v-app-bar>

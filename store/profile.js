@@ -3,6 +3,7 @@ export const state = () => {
     profile: {
       name: '',
       avatar: '',
+      username: '',
     },
   }
 }
