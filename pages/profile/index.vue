@@ -1,15 +1,14 @@
 <template>
   <v-main>
-    {{ profile }}
+    <v-container>
+      {{ profile }}
+    </v-container>
   </v-main>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  mounted() {
-    if (!localStorage.getItem('token')) this.$router.push('/login')
-  },
   computed: {
     ...mapGetters({
       profile: 'profile/profile',
